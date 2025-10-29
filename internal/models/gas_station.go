@@ -1,13 +1,13 @@
 package models
 
-type Gas_Station struct {
+type Pump struct {
 	id          int
 	income      float32
 	fuel_volume map[Fuel]int
 }
 
-func newCasStation(new_id int) *Gas_Station {
-	return &Gas_Station{
+func NewPump(new_id int) *Pump {
+	return &Pump{
 		id:     new_id,
 		income: 0,
 		fuel_volume: map[Fuel]int{

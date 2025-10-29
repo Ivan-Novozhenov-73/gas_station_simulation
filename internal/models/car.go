@@ -6,7 +6,7 @@ type Car struct {
 	tank_volume int
 }
 
-func newCar(new_id int, new_fuel Fuel, new_tank_volume int) *Car {
+func NewCar(new_id int, new_fuel Fuel, new_tank_volume int) *Car {
 	return &Car{
 		id:          new_id,
 		fuel:        new_fuel,
