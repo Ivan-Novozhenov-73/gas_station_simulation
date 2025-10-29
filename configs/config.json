@@ -1,4 +1,5 @@
 {
 	"number_of_pumps": 6,
-	"queue_size": 10
+	"queue_size": 10,
+	"number_of_cars": 200
 }

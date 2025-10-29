@@ -1,15 +1,15 @@
 package models
 
 type Car struct {
-	id          int
-	fuel        Fuel
-	tank_volume int
+	ID         int
+	Fuel       Fuel
+	TankVolume int
 }
 
-func NewCar(new_id int, new_fuel Fuel, new_tank_volume int) *Car {
+func NewCar(_id int, _fuel Fuel, _tankVolume int) *Car {
 	return &Car{
-		id:          new_id,
-		fuel:        new_fuel,
-		tank_volume: new_tank_volume,
+		ID:         _id,
+		Fuel:       _fuel,
+		TankVolume: _tankVolume,
 	}
 }
