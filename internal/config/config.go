@@ -7,12 +7,14 @@ import (
 	"os"
 )
 
+// Модель для десериализации json файла
 type configParams struct {
 	NumberOfPumps int `json:"number_of_pumps"`
 	QueueSize     int `json:"queue_size"`
 	NumberOfCars  int `json:"number_of_cars"`
 }
 
+// Чтение данных из файла конфига
 func LoadConfig(path string) (*models.Station, error) {
 	configFile, err := os.Open(path)
 	if err != nil {

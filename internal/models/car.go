@@ -1,5 +1,6 @@
 package models
 
+// Модель данных для машины
 type Car struct {
 	ID         int
 	Fuel       Fuel
